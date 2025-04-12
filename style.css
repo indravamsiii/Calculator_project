@@ -1,3 +1,4 @@
+/* style.css */
 body {
     transition: background-color 0.3s ease;
     background-color: white;
@@ -54,6 +55,7 @@ body.dark-mode {
 .inputs {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto repeat(5, 1fr); /* Define grid rows */
     gap: 10px;
 }
 
@@ -66,6 +68,11 @@ button {
     cursor: pointer;
     transition: background-color 0.3s ease;
     color: black;
+    width: 100%;
+    box-sizing: border-box;
+    min-width: 0;
+    min-height: 0;
+    text-align: center;
 }
 
 button:hover {
@@ -101,7 +108,7 @@ button:hover.dark-mode {
 
 .equals {
     grid-column: 1 / span 1;
-    grid-row : 4/ span 2;
+    grid-row: 5 / span 2; /* Adjust grid row for equals button */
     background-color: #4caf50;
     color: white;
 }
