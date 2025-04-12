@@ -1,0 +1,158 @@
+body {
+    transition: background-color 0.3s ease;
+    background-color: white;
+    color: black;
+    font-family: sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+.outline {
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    width: 300px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.outline.dark-mode {
+    background-color: #212121;
+    border-color: #333;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+#display {
+    font-size: 30px;
+    height: 60px;
+    width: calc(100% - 20px);
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: right;
+    background-color: #f9f9f9;
+    color: black;
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+#display.dark-mode {
+    background-color: #333;
+    border-color: #555;
+    color: white;
+}
+
+.inputs {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e0e0e0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: black;
+}
+
+button:hover {
+    background-color: #d0d0d0;
+}
+
+button.dark-mode {
+    background-color: #444;
+    color: white;
+}
+
+button:hover.dark-mode {
+    background-color: #555;
+}
+
+.clear {
+    grid-column: 1 / span 4;
+    background-color: #f44336;
+    color: white;
+}
+
+.clear:hover {
+    background-color: #d32f2f;
+}
+
+.clear.dark-mode {
+    background-color: #e57373;
+}
+
+.clear:hover.dark-mode {
+    background-color: #f44336;
+}
+
+.equals {
+    grid-column: 1 / span 1;
+    grid-row : 4/ span 2;
+    background-color: #4caf50;
+    color: white;
+}
+
+.equals:hover {
+    background-color: #388e3c;
+}
+
+.equals.dark-mode {
+    background-color: #81c784;
+}
+
+.equals:hover.dark-mode {
+    background-color: #4caf50;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#clock {
+    font-size: 16px;
+}
+
+#themeToggle {
+    padding: 8px 12px;
+    font-size: 14px;
+}
+
+.footer {
+    text-align: right;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.operator {
+    background-color: #ff9800;
+    color: white;
+}
+
+.operator:hover{
+    background-color: #f57c00;
+}
+
+.operator.dark-mode{
+    background-color: #ffb74d;
+}
+
+.operator:hover.dark-mode{
+    background-color: #ff9800;
+}
